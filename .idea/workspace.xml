@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fd7df2e-a450-48da-9f30-868eea7d9699" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-    </list>
+    <list default="true" id="5fd7df2e-a450-48da-9f30-868eea7d9699" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +30,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OpenSite_Cest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OpenSite_Cest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/acceptance/OpenSite_Cest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -42,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginAdmin_Cest.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginAdmin_Cest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/acceptance/LoginAdmin_Cest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
@@ -405,7 +403,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../testing" />
     <property name="settings.editor.selected.configurable" value="php.test.frameworks.configurable" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/vendor/codeception/codeception/src/Codeception/Step.php&#10;D:/Auto_test/testing/tests/_output/DraftCest.tryToTest.fail.png&#10;D:/Auto_test/testing/vendor/facebook/webdriver/lib/WebDriverExpectedCondition.php" />
   </component>
@@ -433,7 +431,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Codeception.OpenSite_Cest.php">
+  <component name="RunManager" selected="Codeception.LoginAdmin_Cest.php">
     <configuration name="LoginAdmin_Cest.php" type="CodeceptionConfigurationType" factoryName="Codeception" temporary="true">
       <PhpTestRunnerSettings file="$PROJECT_DIR$/tests/acceptance/LoginAdmin_Cest.php" scope="File" />
     </configuration>
@@ -537,8 +535,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Codeception.OpenSite_Cest.php" />
-        <item index="1" class="java.lang.String" itemvalue="Codeception.LoginAdmin_Cest.php" />
+        <item index="0" class="java.lang.String" itemvalue="Codeception.LoginAdmin_Cest.php" />
+        <item index="1" class="java.lang.String" itemvalue="Codeception.OpenSite_Cest.php" />
         <item index="2" class="java.lang.String" itemvalue="Codeception.RunCloseBrowser_Cest.php" />
         <item index="3" class="java.lang.String" itemvalue="Codeception.checkSearch_ru_Cest.php" />
         <item index="4" class="java.lang.String" itemvalue="Codeception.Order_PhysicCourierQuittance_ru_Cest.php" />
@@ -692,7 +690,7 @@
       <workItem from="1523515669122" duration="15000" />
       <workItem from="1523515759487" duration="2058000" />
       <workItem from="1523532377257" duration="284000" />
-      <workItem from="1523532814462" duration="131000" />
+      <workItem from="1523532814462" duration="308000" />
     </task>
     <task id="LOCAL-00015" summary="доработка и добавление новых методов">
       <created>1501489303137</created>
@@ -1041,10 +1039,10 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginAdmin_Cest_php - 2018.04.12 at 14h 26m 52s.xml">
+    <history-entry file="LoginAdmin_Cest_php - 2018.04.12 at 14h 34m 15s.xml">
       <configuration name="LoginAdmin_Cest.php" configurationId="CodeceptionConfigurationType" />
     </history-entry>
-    <history-entry file="LoginAdmin_Cest_php - 2018.04.12 at 14h 34m 15s.xml">
+    <history-entry file="LoginAdmin_Cest_php - 2018.04.12 at 14h 37m 51s.xml">
       <configuration name="LoginAdmin_Cest.php" configurationId="CodeceptionConfigurationType" />
     </history-entry>
     <history-entry file="OpenSite_Cest_php - 2018.04.12 at 09h 52m 05s.xml">
@@ -1073,7 +1071,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="677204000" />
+    <option name="totallyTimeSpent" value="677381000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1086,14 +1084,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28731343" sideWeight="0.49361023" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28731343" sideWeight="0.49361023" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.49791667" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30260304" sideWeight="0.51111114" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26012793" sideWeight="0.4936034" order="10" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29530916" sideWeight="0.49253732" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29530916" sideWeight="0.49253732" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17910448" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29637527" sideWeight="0.4888889" order="11" side_tool="false" content_ui="tabs" x="1281" y="113" width="630" height="921" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20842217" sideWeight="0.5063898" order="2" side_tool="true" content_ui="tabs" />
@@ -1391,14 +1390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/acceptance/LoginAdmin_Cest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/_support/Helper/Acceptance.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1419,6 +1410,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/acceptance/LoginAdmin_Cest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
