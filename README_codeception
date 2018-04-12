@@ -1,0 +1,69 @@
+# Инструкция для разворачивания рабочей среды
+
+В данном документе описывается подготовка окружения для тестирования.
+Разработка тестов ведетcя на машине тестировщика с применением `Codeception` (фреймворка для тестирования PHP проектов).
+
+Версии ПО:
+
+* PHP 7.1
+
+Необходимое ПО на машине разработчика (windows):
+
+* [git](https://git-for-windows.github.io)
+* [java](https://www.java.com/ru/download/)
+* [php](http://windows.php.net/download#php-7.1)
+* [composer](https://getcomposer.org/Composer-Setup.exe)
+* [chrome](https://www.google.ru/chrome/browser/desktop/index.html)
+* [firefox](https://www.mozilla.org/ru/firefox/new/)
+
+## Настройка рабочего окружения
+### 1.1. Клонирование проекта и проверка Codeception
+
+После установки ПО необходимо склонировать проект к себе на компьютер.
+    
+    $ git clone <репозиторий> <каталог_проекта>
+    
+Далее переходим в каталог проекта и выполняем команду
+    
+    $ composer install
+    
+Проверяем работу `Codeception`
+    
+    $ vendor/bin/codecept
+    
+Должен вывестить список доступных команд и версия Codeception.
+
+### 1.2. Скачивание и запуск SeleniumServer
+В корне проекта лежит файл run-selenium-server.php, отвечающий за скачивание всего необходимого для запуска SeleniumServer.
+Выполним следующую команду:
+    
+    $ php run-selenium-server.php
+
+В проекте появится директория selenium-server, в которой есть файл `run-selenium-server.bat`, отвечающий за старт SeleniumServer,
+необходимого для запуска браузера.
+
+Перед началом работ необходимо запустить SeleniumServer командой:
+
+    $ selenium-server/run-selenium-server.bat
+
+После чего, можно запустить все доступные тесты командой:
+
+    $ vendor/bin/codecept run --steps
+    
+### 1.3. Настрйока PHPStorm для запуска тестов
+Переходим в меню 
+    
+    *Run->Edit Configurations->Add new Configuration->Codeception*
+
+В разделе `Test Runner` выбираем `Type` и ниже выбираем тип тестов, в нашем случае `acceptance`
+
+Далее в разделе `Use alternative configuration file` справа кликаем на иконку с `"Ключом и шестерёнкой"` и заполняем поле `Path to Сodeception executable`  `[PathToProject]/vendor/codeception/codeception/codecept`
+и кликаем на иконку обновить, ниже должна появиться версия текущего Codeception. 
+
+Для удобного запуска SeleniumServer выполним следующее
+
+Переходим в меню 
+    
+    *Run->Edit Configurations->Add new Configuration->PHP Script*
+    
+В разделе `File` добавляем файл `run-selenium-server.php` и сохраняем, после чего сервер можно запустить зелёной кнопкой Play    
