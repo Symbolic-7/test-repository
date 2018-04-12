@@ -4,5 +4,3 @@
 !/tests/_data/.gitkeep
 /tests/_output/*
 !/tests/_output/.gitkeep
-.idea/
-/selenium-server/

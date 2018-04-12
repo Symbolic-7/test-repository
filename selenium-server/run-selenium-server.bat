@@ -1,0 +1,1 @@
+java -Dwebdriver.chrome.driver=G:\Auto_test\GitHub\test-repository\selenium-server\chromedriver.exe -jar G:\Auto_test\GitHub\test-repository\selenium-server\selenium-server-standalone-3.11.0.jar
