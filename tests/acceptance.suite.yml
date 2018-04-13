@@ -13,5 +13,5 @@ modules:
                     url: 'http://localhost/litecart/'
                     browser: chrome
                     window_size: maximize
-#                   browser: firefox
+
         - \Helper\Acceptance

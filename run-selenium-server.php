@@ -14,9 +14,9 @@ define('STDIN', fopen('php://stdin', 'r'));
 
 $thisPath = __DIR__ . '\\selenium-server\\';
 $batFile = 'run-selenium-server.bat';
-$seleniumURL = 'http://selenium-release.storage.googleapis.com/3.4/selenium-server-standalone-3.11.0.jar';
+$seleniumURL = 'http://selenium-release.storage.googleapis.com/3.11/selenium-server-standalone-3.11.0.jar';
 $chromeDriverURL = 'http://chromedriver.storage.googleapis.com/2.36/chromedriver_win32.zip';
-$geckoDriverURL = 'https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodriver-v0.19.0-win64.zip';
+$geckoDriverURL = 'https://github.com/mozilla/geckodriver/releases/download/v0.20.1/geckodriver-v0.20.1-win64.zip';
 $phantomJsURL = 'https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-windows.zip';
 
 if (!file_exists($thisPath)) {
@@ -30,17 +30,17 @@ if (!file_exists($thisPath . $seleniumBase)) {
 }
 
 downloadArchiveDriver($chromeDriverURL, 'chromedriver');
-#downloadArchiveDriver($geckoDriverURL, 'geckodriver');
+downloadArchiveDriver($geckoDriverURL, 'geckodriver');
 #downloadArchiveDriver($phantomJsURL, 'phantomjs');
 
 if (!is_file($thisPath . $batFile)) {
     echo "Create $batFile\n";
     file_put_contents($thisPath . $batFile, "java -Dwebdriver.chrome.driver={$thisPath}chromedriver.exe -jar {$thisPath}{$seleniumBase}");
-    #file_put_contents($thisPath . $batFile, "java -Dwebdriver.gecko.driver={$thisPath}geckodriver.exe -jar {$thisPath}{$seleniumBase}");
+    file_put_contents($thisPath . $batFile, "java -Dwebdriver.gecko.driver={$thisPath}geckodriver.exe -jar {$thisPath}{$seleniumBase}");
     #file_put_contents($thisPath . $batFile, "selenium-server {$thisPath}phantomjs.exe --webdriver=4444");
 }
 system("java -Dwebdriver.chrome.driver={$thisPath}chromedriver.exe -jar {$thisPath}{$seleniumBase}"); //запуск chrome
-#system("java -Dwebdriver.gecko.driver={$thisPath}geckodriver.exe -jar {$thisPath}{$seleniumBase}");
+system("java -Dwebdriver.gecko.driver={$thisPath}geckodriver.exe -jar {$thisPath}{$seleniumBase}");
 #system("{$thisPath}phantomjs-2.1.1-windows\bin\phantomjs.exe --webdriver=4444"); //запуск PhantomJS
 
 /**

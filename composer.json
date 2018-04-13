@@ -1,7 +1,5 @@
 {
-    "require": {
-        "codeception/codeception": "*",
-        "codeception/specify": "*",
-        "codeception/verify": "*"
+    "require-dev": {
+        "codeception/codeception": "2.3.9"
     }
 }
